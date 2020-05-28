@@ -1,2 +1,2 @@
 # Online-Education-System
-A system to simplify online education 
+A System To Simplify Online Education In Tanzania, The Future Of Education In Tanzania
