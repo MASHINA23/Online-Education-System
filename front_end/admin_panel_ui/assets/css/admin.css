@@ -1,0 +1,206 @@
+#wrapper {
+    display: flex;
+}
+#wrapper #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow: hidden;
+}
+#wrapper #content-wrapper #content {
+    flex: 1 0 auto;
+}
+.sidebar {
+    width: 14rem !important;
+    min-height: 100vh;
+    background: #28a745;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 1rem 1rem;
+}
+.sidebar .sidebar-brand {
+    height: 4.375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sidebar li {
+    padding: 0 0 0 1.4rem;
+}
+.sidebar #sidebarToggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.sidebar #sidebarToggle::after {
+    font-weight: 900;
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.1rem;
+}
+.sidebar #sidebarToggle:hover {
+    text-decoration: none;
+}
+.sidebar #sidebarToggle:focus {
+    outline: none;
+}
+.sidebar.toggled {
+    width: 0 !important;
+    transition: width 200ms ease-in;    
+    overflow: hidden;
+}
+.sidebar.toggled #sidebarToggle::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 0.25rem;
+}
+.topbar {
+    height: 4.375rem;
+    border-bottom: 1px solid #28a745;
+}
+topbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #5d5d5d;
+}
+.dropdown.no-arrow .dropdown-toggle::after {
+    display: none;
+}
+.topbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    transform: scale(0.7);
+    transform-origin: top right;
+    right: .25rem;
+    margin-top: -.25rem;
+}
+.dropdown-list {
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 3.6rem;
+    border: none;
+    overflow: hidden;
+}
+.user-dropdown, .search-dropdown {
+    top: 3.6rem;
+    border: none;
+    overflow: hidden; 
+}
+.dropdown-header {
+    background: #28a745;
+    border: 1px solid #28a745;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+    font-size: 0.65rem;
+    color: #ffffff;
+}
+.dropdown-item:active {
+    background: #ededed !important;
+}
+.topbar .dropdown-list .dropdown-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e3e6f0;
+    line-height: 1.3rem;
+}
+.topbar .dropdown-list .dropdown-item .dropdown-list-image img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.topbar .dropdown-list .dropdown-item .dropdown-list-image .status-indicator {
+    background: #1bff4f;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    border: 0.125rem solid #fff;
+}
+.icon-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar .img-profile {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #e6e6e6;
+}
+.slick-slide {
+    outline: none;
+    margin-right: 3px;;
+}
+.slick-dots li button:before {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 10px;
+}
+.card-img-right i {
+    position: absolute;
+    top: 5rem;
+    left: 17rem;
+}
+.card-body {
+    color: #28a745;
+}
+.card-img-top img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.card-footer a{
+    color: #131313;
+}
+.card-footer {
+    color: #131313;
+    background: #f8f9fa;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    line-height: 46px;
+    border-radius: 100% !important;
+}
+@media (max-width: 576px) {
+  .topbar .dropdown {
+    position: relative;
+  }
+  .topbar .dropdown .dropdown-menu {
+    width: auto;
+    right: 40px;
+  }
+  .topbar .dropdown-list {
+    width: 20rem !important;
+  }
+  .topbar .dropdown-list .dropdown-item .text-truncate {
+    max-width: 13.375rem;
+  }
+  .card-img-right i {
+    position: absolute;
+    top: 5rem;
+    left: 14rem;
+}
+
+}
+.footer {
+    padding: 1.8rem;
+    background: #fdfdfd;
+    flex-shrink: 0;
+}
